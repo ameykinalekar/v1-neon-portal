@@ -1,0 +1,30 @@
+.donut_chart_wrapper {
+	background: rgba(204, 204, 204, 0);
+	height: 58px;
+	width: 58px;
+	position: relative;
+}
+
+.donut_chart_wrapper .donut {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.donut-segment {
+  animation-name: fill-in;
+  animation-fill-mode: forwards;
+  animation-duration: 2000ms;
+/*   animation-timing-function: ease-in-out; */
+/*   opacity: 0; */
+}
+
+@keyframes fill-in {
+  from {
+/*     opacity: 0; */
+    stroke-dashoffset: 0;
+  }
+  to {
+/*     opacity: 1; */
+  }
+}

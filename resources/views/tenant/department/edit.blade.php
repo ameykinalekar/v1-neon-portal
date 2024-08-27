@@ -1,0 +1,37 @@
+@extends('layouts.ajax')
+@section('pagecss')
+<link rel="stylesheet" href="{{asset('admin/css/select2.min.css')}}">
+@endsection
+@section('content')
+<form method="POST" class="d-block ajaxForm" action="{{route('ta_updatedepartment',Session()->get('tenant_info')['subdomain'])}}">
+    @csrf
+    <input type="hidden" name="department_id" value="{{$details['department_id']??''}}">
+    <div class="form-row">
+        <div class="form-group mb-1">
+            <label for="academic_year">Department Name</label>
+            <input type="text" class="form-control" id="department_name" name ="department_name" value="{{$details['department_name']??''}}" required>
+        </div>
+
+        <div class="form-group mb-1">
+            <label for="short_name">Status</label>
+            {{ Form::select('status',$status, $details['status']??'', array('class' => 'form-control select2_el','required','id' => 'record_status','placeholder' => 'Select Status')) }}
+        </div>
+        <div class="form-group mt-2 col-md-12">
+            <button class="btn btn-block btn-primary" type="submit">Update Department</button>
+        </div>
+    </div>
+</form>
+@endsection
+@section('pagescript')
+<script src="{{ asset('admin/js/select2.full.min.js')}}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        initailizeSelect2();
+    });
+    // Initialize select2
+    function initailizeSelect2() {
+
+        $(".select2_el").select2({dropdownParent: $("#right-modal")});
+    }
+</script>
+@endsection

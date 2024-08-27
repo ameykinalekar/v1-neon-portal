@@ -1,0 +1,199 @@
+.auth-fluid .auth-fluid-form-box {
+    background-color: #fff0;
+    left: 70px;
+    padding: 3rem 0rem;
+}
+
+.auth-fluid .auth-fluid-form-box {
+    max-width: 692px;
+}
+
+.list-item li {
+    list-style: none;
+}
+
+.btn.btn-primary {
+    color: #fff;
+    background-color: rgba(90, 194, 185, 01);
+}
+
+.btn.btn-lg {
+    font-size: 20px;
+    padding: 18px 70px;
+    width: 400px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.btn.btn-admin {
+    color: #fff;
+    background-color: #4c94db;
+}
+
+.btn-teacher {
+    color: #000000;
+    background-color: #fcc244;
+}
+
+.btn-student {
+    color: #fff;
+    background-color: #e91e63;
+}
+
+.list-item li i {
+    color: #fff;
+    font-size: 30px !important;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.card-body {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+body {
+    overflow: hidden;
+    top: 0px;
+    opacity: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card-body {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    top: 80px;
+    padding: 33px;
+    position: absolute;
+    height: fit-content;
+    width: 350px;
+}
+
+.card-body h4 {
+    top: 266px;
+    width: 127px;
+    margin: auto;
+    height: 35px;
+    letter-spacing: 0px;
+    color: #434343;
+}
+
+.card-body button {
+    display: inline;
+    width: 128px;
+    height: 48px;
+    background: #5BC2B9 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.card-body button:nth-child(2) {
+    background: #FCC244 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.card-body button:nth-child(3) {
+    background: #4C94DB 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.card-body button:nth-child(4) {
+    background: #E87E69 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.form-control {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #DBDBDB;
+    border-radius: 8px;
+}
+
+.auth-fluid {
+    background-image: none;
+}
+
+.super_logo {
+    position: sticky;
+    right: 0.5%;
+    padding: 15px;
+    border-radius: 8px;
+    top: 2%;
+    background: #ffffffa8;
+    width: fit-content;
+    float: right;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .card-body {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        top: 80px;
+        padding: 33px;
+        position: absolute;
+        height: fit-content;
+        left: 9%;
+        width: fit-content;
+    }
+
+    .auth-fluid .auth-fluid-form-box {
+        max-width: inherit;
+        left: 0px;
+        margin: auto;
+    }
+
+    .super_logo {
+        position: relative;
+        right: 0%;
+        padding: 7px;
+        width: fit-content;
+        border-radius: 8px;
+        margin: auto;
+        top: 5%;
+        background: #ffffffa8;
+        cursor: pointer;
+    }
+
+    .form-control {
+        height: 40px;
+    }
+}
+
+.alert .close {
+    color: #000;
+    /* opacity: .2; */
+    /* filter: alpha(opacity=20); */
+  }
+  .alert-dismissable .close, .alert-dismissible .close {
+    position: absolute;
+    top: -5px;
+    right: -50px;
+    color: inherit;
+  }
+  button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+  }
+  .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+  }
+  .login-logo{
+    border-radius: 30%;
+    padding-bottom: 5px;
+  }
+  .landing-logo{
+
+    padding-bottom: 16px;
+  }
